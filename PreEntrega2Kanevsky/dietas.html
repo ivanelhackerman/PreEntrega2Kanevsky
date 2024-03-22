@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That Healthy Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dietas.html">Dietas</a></li>
+                <li><a href="calculadora.html">Calculadora IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+    </div>
+    <script src="script.js"></script>
+    <h1>That Healthy Flow - Dietas</h1>
+    <form id="diet-form">
+        <label for="calorias">Cantidad de calorías diarias:</label>
+        <input type="number" id="calorias" required><br>
+        
+        <fieldset>
+            <legend>Preferencias de Alimentación:</legend>
+            <input type="checkbox" id="vegano" name="alimentacion" value="vegano">
+            <label for="vegano">Vegano</label><br>
+            <input type="checkbox" id="diabetico" name="alimentacion" value="diabetico">
+            <label for="diabetico">Diabético</label><br>
+            <input type="checkbox" id="vegetariano" name="alimentacion" value="vegetariano">
+            <label for="vegetariano">Vegetariano</label><br>
+            <input type="checkbox" id="pescetariano" name="alimentacion" value="pescetariano">
+            <label for="pescetariano">Pescetariano</label><br>
+            <input type="checkbox" id="sin-lacteos" name="alimentacion" value="sin-lacteos">
+            <label for="sin-lacteos">Sin lácteos</label><br>
+        </fieldset>
+        
+        <button type="submit">Buscar Recetas</button>
+    </form>
+
+    <div id="recetas-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

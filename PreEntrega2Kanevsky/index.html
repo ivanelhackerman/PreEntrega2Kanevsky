@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That Healthy Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dietas.html">Dietas</a></li>
+                <li><a href="calculadora.html">Calculadora IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+    </div>
+    <script src="script.js"></script>
+    <h1>That Healthy Flow - Crear Cuenta</h1>
+    <form id="signup-form">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" required><br>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" required><br>
+
+        <label for="objetivo">Objetivo de Salud:</label>
+        <textarea id="objetivo" rows="4" cols="50" required></textarea><br>
+
+        <button type="submit">Crear Cuenta</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
